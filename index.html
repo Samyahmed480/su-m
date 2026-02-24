@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبيه الحساب | الدعم الفني</title>
+    
+    <!-- خط Cairo العربي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-body: #f3f4f6;
+            --bg-card: #ffffff;
+            --text-main: #1f2937;
+            --text-p: #4b5563;
+            --danger: #ef4444;
+            --whatsapp: #25D366;
+            --phone: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        }
+
+        .support-card {
+            background-color: var(--bg-card);
+            width: 100%;
+            max-width: 450px;
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            animation: fadeIn 0.5s ease-out;
+            border-top: 6px solid var(--danger);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lock-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #fee2e2;
+            color: var(--danger);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 0 10px rgba(239, 68, 68, 0.1);
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-p);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn i {
+            font-size: 22px;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ea952;
+            transform: translateY(-2px);
+        }
+
+        .btn-phone {
+            background-color: var(--phone);
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-phone:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .separator::before { margin-left: 10px; }
+        .separator::after { margin-right: 10px; }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #6b7280;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="support-card">
+        <!-- أيقونة القفل للتعبير عن توقف الموقع -->
+        <div class="lock-icon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <h1>الموقع متوقف مؤقتاً</h1>
+        <p>
+            عفواً، يبدو أن صلاحية اشتراكك قد انتهت أو أن رخصة الاستخدام غير مفعلة. يرجى التواصل مع الدعم الفني لتجديد الاشتراك وإعادة تفعيل الموقع.
+        </p>
+
+        <div class="buttons-group">
+            <!-- زر واتساب للرقم الأول -->
+            <!-- تم إضافة 20 وهو مفتاح مصر ليعمل الرابط مباشرة -->
+            <a href="https://wa.me/201279180008" class="btn btn-whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                دعم واتساب (01067765058)
+            </a>
+
+            <!-- زر واتساب للرقم الثاني -->
+     
+            <div class="separator">أو</div>
+
+            <!-- زر الاتصال الهاتفي المباشر للرقم الأول -->
+            <a href="tel:01279180008" class="btn btn-phone">
+                <i class="fa-solid fa-phone"></i>
+                اتصال هاتفي مباشر
+            </a>
+        </div>
+
+        <div class="footer-text">
+            نحن متواجدون لمساعدتك وإعادة تفعيل موقعك في أسرع وقت.
+        </div>
+    </div>
+
+</body>
+</html>
